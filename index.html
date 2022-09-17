@@ -101,6 +101,25 @@
     flex: 1;
     box-sizing: border-box;
 }
+.scaleSec {
+    position: relative;
+}
+.scaleSec img{
+    position: absolute;
+    left: 0;
+    width: 500px;
+    max-width: 100%;
+    animation: animationRocket 0.5s ease-in, fixed infinite;
+
+}
+@keyframes animationRocket {
+    0%   { left:0px; top:0px;}
+    100%   {left:400px; top:0px;}
+}
+@keyframes animationRocket {
+    100%   {left:400px; top:0px;}
+
+}
 </style>
 <body>
     <header>
@@ -147,6 +166,21 @@
     <div class="colOne">
     <img src="./asset/images/Group 2158.png" height="auto" width="100%"/>
     </div>
+    </div>
+    </div>
+    </section>
+    <section class="scaleSec">
+        <div class="container">
+            <div class="row"> 
+           <div class="colOne"> 
+            <div class="secret--content"> 
+            <h2> Scale Your <br>
+                Content <strong> Fast </strong></h2>
+                <h6> <strong> DESIGNED TO GIVE YOU RESULTS </strong></h6>
+                <img src="./asset/images/img.png" height="auto" width="100%"/>
+        </div>
+    </div>
+    <div class="colOne">    </div>
     </div>
     </div>
     </section>
