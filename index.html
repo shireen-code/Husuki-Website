@@ -109,16 +109,15 @@
     left: 0;
     width: 500px;
     max-width: 100%;
-    animation: animationRocket 0.5s ease-in, fixed infinite;
+    animation-name: animationRocket;
+    animation-duration: 0.9s;
+  animation-iteration-count: 10;
+animation-timing-function: ease-in;
 
 }
 @keyframes animationRocket {
     0%   { left:0px; top:0px;}
     100%   {left:400px; top:0px;}
-}
-@keyframes animationRocket {
-    100%   {left:400px; top:0px;}
-
 }
 </style>
 <body>
