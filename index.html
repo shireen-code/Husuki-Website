@@ -7,6 +7,7 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap');
     body{
+        background-image: url('./asset/images/Hoski_web_home_background.jpg');
         font-family: 'Raleway', sans-serif;
         margin: 0;
         height: 100%;
@@ -14,10 +15,15 @@
     header{
         position: absolute;
         width: 100%;
+        z-index: 9;
     }
     nav{
         display: flex;
+        padding: 0 30px;
         justify-content: space-between;
+    }
+    nav>img{
+        object-fit: contain;
     }
     nav ul{
         list-style: none;
@@ -25,22 +31,55 @@
     }
     nav ul>li{
         display: inline-block;
-        margin: 0 6px;
+        margin: 0 8px;
     }
     nav ul > li{
         display: inline-block;
-    } nav ul > li >a{
+    } nav ul > li a{
         font-size: 14px;
         font-weight: 600;
         color: #fff;
         text-decoration: none;
     }
-
+    .videoSec{
+        position: relative;
+    }
    .videoSec video {
-    width: 100%;
+    height: auto;
     max-width: 100%;
-    max-height: 100%;
+    object-fit: fill;
 
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.videoSec .overlay h4{
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.videoSec .overlay h2{
+    font-size: 89px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 1;
+    margin-top: 0;
+}
+.row{
+    display: flex;
 }
 </style>
 <body>
@@ -49,7 +88,7 @@
             <img src="./asset/images/MenuLogo.png" alt="img_logo"/>
             <ul>
                 <li> <a href=""> Home  </a></li>
-                <li> <a href=""> Home  </a></li>
+                <li> <a href=""> image.png </a></li>
                 <li> <a href=""> Home  </a></li>
             </ul>
         </nav>
@@ -58,6 +97,35 @@
         <video autoplay muted >            
          <source src="./asset/images/Hoski_website_home_top_video.mp4"  type="video/mp4">
         </video>
+        <div class="overlay">
+            <h4> MEET Your </h4>
+            <h2>CONVERSION <br>
+                CONTENT PARTNER</h2>
+        </div>
+    </section>
+    <section class="secretSec">
+        <div class="container">
+            <div class="row"> 
+           <div class="colOne"> 
+            <div class="secret--content"> 
+            <h2> An Agency’s <br>
+                <span> Secret Weapon </span> </h2>
+                <p> <strong>What’s stopping you from DOUBLE your sales today? </strong> </p>
+                  <p> So why don’t you just go to Facebook or Google and buy all the traffic you need to get those sales?</p>
+
+                <p>Let’s be honest…
+                    You can have the best ideas, but if you can’t execute on them you won’t get closer 
+                    to your dreams. Lack of traffic is not what is holding you back from selling more. </p>
+
+                <p>The truth is, no one knows what you’re offering, and, no ultra-targeted, highest-quality traffic on the planet will save you if people don’t understand your genius. </p>
+
+                <p> Our mission is message clarity,
+                And we do it using power content medium.
+                                </p>
+        </div>
+    </div>
+    </div>
+    </div>
     </section>
 </body>
 </html>
