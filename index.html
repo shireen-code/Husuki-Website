@@ -7,7 +7,6 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap');
     body{
-        background-image: url('./asset/images/Hoski_web_home_background.jpg');
         font-family: 'Raleway', sans-serif;
         margin: 0;
         height: 100%;
@@ -80,6 +79,27 @@
 }
 .row{
     display: flex;
+    flex-wrap: wrap;
+}
+.secretSec{
+    padding: 90px 0 ;
+}
+.secretSec .secret--content{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.secretSec .secret--content p{
+    color: #fff;
+    font-size: 24px;
+}
+.secretSec .secret--content h2{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 300;
+}
+.colOne{
+    flex: 1;
+    box-sizing: border-box;
 }
 </style>
 <body>
@@ -108,8 +128,8 @@
             <div class="row"> 
            <div class="colOne"> 
             <div class="secret--content"> 
-            <h2> An Agency’s <br>
-                <span> Secret Weapon </span> </h2>
+            <h2> <strong> An Agency’s  </strong><br>
+            Secret Weapon  </h2>
                 <p> <strong>What’s stopping you from DOUBLE your sales today? </strong> </p>
                   <p> So why don’t you just go to Facebook or Google and buy all the traffic you need to get those sales?</p>
 
@@ -124,8 +144,17 @@
                                 </p>
         </div>
     </div>
+    <div class="colOne">
+    <img src="./asset/images/Group 2158.png" height="auto" width="100%"/>
+    </div>
     </div>
     </div>
     </section>
 </body>
+<script>
+    var imageURL = "url('./asset/images/Hoski_web_home_background.jpg')";
+    var bodyBg = document.body;
+    bodyBg.style.backgroundImage = imageURL;
+    bodyBg.style.backgroundSize = "cover"
+</script>
 </html>
